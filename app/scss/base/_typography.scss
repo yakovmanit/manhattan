@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Stolzl';
+  font-weight: 400;
+  // font-size: 14px;
+  @include adaptiv-font(14, 12);
+  line-height: 1.5;
+  color: #fff;
+  height: 100%;
+  background-color: #210E09;
+
+  @media only screen and (max-width: 768px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  padding-top: 100px;
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+
+
+.heading-primary {
+  @include adaptiv-font(54, 36);
+}
+
+.heading-secondary {
+  @include adaptiv-font(40, 24);
+  max-width: 300px;
+
+  &--center {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.heading-tertiary {
+  @include adaptiv-font(18, 14);
+  font-weight: 700;
+}
+
+// .paragraph {
+
+// }

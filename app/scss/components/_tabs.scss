@@ -1,0 +1,40 @@
+.tabs-container {}
+
+.tabs-wrapper {
+  display: flex;
+}
+
+.tab {
+  padding: 12px 48px;
+  background-color: #d5631d28;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab--active {
+  padding: 12px 10px;
+  background-color: #d5631d48;
+}
+
+.tabs-content {
+  display: none;
+  background-color: #d5631d48;
+  padding: 37px 35px;
+  flex-wrap: wrap;
+  gap: 26px;
+  width: 420px;
+  border-radius: 0 0 5px 5px;
+
+  @media only screen and (max-width: 560px) {
+    justify-content: center;
+    padding: 25px 0;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+.tabs-content--active {
+  display: flex;
+}

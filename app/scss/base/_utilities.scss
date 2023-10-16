@@ -1,0 +1,37 @@
+// .u-center-text { text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 150px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 110px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 80px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 40px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}

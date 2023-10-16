@@ -1,0 +1,161 @@
+.dishes {
+
+  &__slider {
+    max-width: 1276px;
+    margin: 0 auto;
+  }
+
+  &__item-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 56px !important;
+
+    @media only screen and (max-width: 1240px) {
+      gap: 25px !important;
+    }
+
+    @media only screen and (max-width: 992px) {
+      gap: 15px;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    margin: 0 80px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    max-width: 486px !important;
+    justify-content: center;
+
+    @media only screen and (max-width: 1240px) {
+      gap: 15px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 992px) {
+      max-width: 100% !important;
+    }
+
+    @media only screen and (max-width: 425px) {
+      // margin: 0;
+    }
+  }
+
+  &__item-img-link {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__item-img {
+    width: 100%;
+  }
+
+  &__item-info {
+    max-width: 351px;
+
+    @media only screen and (max-width: 1240px) {
+      max-width: 300px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      max-width: 70% !important;
+    }
+
+    @media only screen and (max-width: 425px) {
+      max-width: 60% !important;
+    }
+  }
+
+  &__item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item-title {
+    @include adaptiv-font(18, 14);
+    font-weight: 700;
+  }
+
+  &__item-price {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 2px solid #D5621D;
+
+    @media only screen and (max-width: 768px) {
+      padding: 4px 10px;
+    }
+  }
+
+  &__item-weight {
+    margin-bottom: 10px;
+    color: #D5621D;
+  }
+
+  &__item-descr {}
+
+  &__button {
+    margin-top: 100px;
+
+    @media only screen and (max-width: 1024px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  background-color: #D5621D;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  z-index: 100;
+
+  &:hover {
+    background-color: #d5631dda;
+  }
+
+  &:active {
+    background-color: #d5631db6;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.slick-prev {
+  left: 0px;
+}
+
+.slick-next {
+  right: 0px;
+  left: auto;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+
+  li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #d5631dbe;
+
+    &.slick-active {
+      background-color: #ff3300;
+    }
+  }
+
+  li button {
+    font-size: 0;
+  }
+}
