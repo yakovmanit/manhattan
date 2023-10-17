@@ -5,16 +5,18 @@
 }
 
 .tab {
-  padding: 12px 48px;
+  padding: 12px 10px;
   background-color: #d5631d28;
   width: 50%;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab--active {
-  padding: 12px 10px;
   background-color: #d5631d48;
 }
 

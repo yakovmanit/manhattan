@@ -11,12 +11,15 @@
 @import 'base/utilities';
 
 
+@import 'components/accordion';
 @import 'components/button';
 @import 'components/dishes';
+@import 'components/equipment';
 @import 'components/events';
 @import 'components/tabs';
 @import 'components/top';
 
+@import 'layout/footer';
 @import 'layout/header';
 
 @import 'pages/home';

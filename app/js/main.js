@@ -68,3 +68,24 @@ headerBurger.addEventListener('click', function (event) {
   headerMenu.classList.toggle('active');
   body.classList.toggle('lock');
 });
+
+
+
+const accordionItems = document.querySelectorAll(".accordion__item");
+
+accordionItems.forEach((item) => {
+    const header = item.querySelector(".accordion__top");
+    const content = item.querySelector(".accordion__bottom");
+
+    header.addEventListener("click", () => {
+        // Закрыть все другие аккордеоны
+        accordionItems.forEach((otherItem) => {
+            const otherContent = otherItem.querySelector(".accordion__bottom");
+            if (otherItem !== item) {
+                otherItem.classList.remove("open");
+            }
+        });
+
+        item.classList.toggle("open");
+    });
+});
