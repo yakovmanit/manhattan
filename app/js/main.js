@@ -57,6 +57,8 @@ $(function () {
       },
     ]
   });
+
+  new WOW().init();
 });
 
 const headerBurger = document.querySelector('.header__burger'); //menu-btn
@@ -88,4 +90,10 @@ accordionItems.forEach((item) => {
 
         item.classList.toggle("open");
     });
+});
+
+
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
 });

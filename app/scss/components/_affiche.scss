@@ -1,4 +1,9 @@
 .affiche {
+  margin-top: 100px;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 70px;
+  }
 
   &__inner {
     display: grid;

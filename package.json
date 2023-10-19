@@ -20,5 +20,9 @@
     "jquery": "^3.6.0",
     "sass": "^1.45.2",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.24",
+    "wowjs": "^1.1.3"
   }
 }
